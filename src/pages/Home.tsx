@@ -30,7 +30,7 @@ function Home({ isDarkMode }: HomeProps) {
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
                 <img 
-                  src="src/img/UdayAwal.jpg" 
+                  src="https://avatars.githubusercontent.com/u/80699327?v=4"
                   alt="Uday Awal"
                   className="w-full h-full object-cover"
                 />
