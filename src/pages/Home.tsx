@@ -29,7 +29,7 @@ function Home({ isDarkMode }: HomeProps) {
             </div>
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
               <img 
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=256&h=256&fit=crop" 
+                src="/img/UdayAwal.jpg" 
                 alt="Uday Awal"
                 className="w-full h-full object-cover"
               />
