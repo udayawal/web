@@ -32,12 +32,6 @@ function Navbar({ isDarkMode, setIsDarkMode }: NavbarProps) {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className={`p-2 rounded-lg ${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}`}
-            >
-              {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
             <a href="https://github.com/yourusername" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
               <Github className="w-6 h-6" />
             </a>
@@ -47,6 +41,12 @@ function Navbar({ isDarkMode, setIsDarkMode }: NavbarProps) {
             <a href="https://tryhackme.com/p/yourusername" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
               <Trophy className="w-6 h-6" />
             </a>
+            <button
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className={`p-2 rounded-lg ${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
           </div>
         </div>
       </div>

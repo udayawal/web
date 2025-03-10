@@ -9,11 +9,11 @@ interface HomeProps {
 function Home({ isDarkMode }: HomeProps) {
   return (
     <div>
-      <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20">
+      <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20 transition-colors">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-12">
             <div className="max-w-3xl">
-              <h1 className="text-5xl font-bold mb-4">
+              <h1 className="text-5xl font-bold mb-4 text-gray-300">
                 <span className="text-cyan-400">Securing</span> Digital Assets
               </h1>
               <p className="text-xl text-gray-300 mb-8">
@@ -21,23 +21,24 @@ function Home({ isDarkMode }: HomeProps) {
               </p>
               <Link 
                 to="/contact"
-                className={`inline-flex items-center gap-2 px-6 py-3 ${isDarkMode ? 'bg-cyan-400 text-gray-900' : 'bg-[#9EFCFF] text-gray-900'} rounded-lg font-medium transition-colors hover:opacity-90`}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-400 text-gray-900 rounded-lg font-medium transition-colors hover:opacity-90"
               >
                 Get in Touch
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
-              <img 
-                src="/img/UdayAwal.jpg" 
-                alt="Uday Awal"
-                className="w-full h-full object-cover"
-              />
+            <div className="flex justify-center">
+              <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
+                <img 
+                  src="src/img/UdayAwal.jpg" 
+                  alt="Uday Awal"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <section className="py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
