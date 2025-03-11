@@ -20,7 +20,7 @@ function Home({ isDarkMode }: HomeProps) {
                 Information Security Professional specializing in threat detection, incident response, and security architecture
               </p>
               <Link 
-                to="/contact"
+                to="https://www.linkedin.com/messaging/thread/new/?recipient=uday-awal"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-400 text-gray-900 rounded-lg font-medium transition-colors hover:opacity-90"
               >
                 Get in Touch
@@ -39,7 +39,8 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
-      <section className="py-12">
+      <section className="py-5"></section>
+      <section className="py-5">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}>
@@ -65,8 +66,7 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
-
-      <section className="py-12">
+      <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Experience</h2>
           <div className="space-y-6">
@@ -100,8 +100,7 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
-
-      <section className="py-12">
+      <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Certifications</h2>
           <div className="space-y-6">
@@ -133,8 +132,7 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
-
-      <section className="py-12">
+      <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Contact</h2>
           <Link 
@@ -161,6 +159,7 @@ function Home({ isDarkMode }: HomeProps) {
           </Link>
         </div>
       </section>
+      <section className="py-5"></section>
     </div>
   );
 }

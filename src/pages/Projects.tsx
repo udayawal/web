@@ -11,7 +11,7 @@ function Projects({ isDarkMode }: ProjectsProps) {
       <h2 className="text-3xl font-bold mb-12 text-cyan-400">Featured Projects</h2>
       
       <div className="grid gap-8">
-        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border`}>
+        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border hover:border-cyan-400 transition-colors group`}>
           <div className="flex items-center gap-4 mb-4">
             <Wifi className="w-8 h-8 text-cyan-400" />
             <h3 className="text-2xl font-semibold">Wi-Fi Guardian</h3>
@@ -26,7 +26,7 @@ function Projects({ isDarkMode }: ProjectsProps) {
           </div>
         </div>
 
-        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border`}>
+        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border hover:border-cyan-400 transition-colors group`}>
           <div className="flex items-center gap-4 mb-4">
             <Cloud className="w-8 h-8 text-cyan-400" />
             <h3 className="text-2xl font-semibold">Azure Sentinel SIEM</h3>
@@ -41,7 +41,7 @@ function Projects({ isDarkMode }: ProjectsProps) {
           </div>
         </div>
 
-        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border`}>
+        <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} p-8 rounded-lg border hover:border-cyan-400 transition-colors group`}>
           <div className="flex items-center gap-4 mb-4">
             <Key className="w-8 h-8 text-cyan-400" />
             <h3 className="text-2xl font-semibold">Smart Lock with Advanced Biometric Authentication</h3>

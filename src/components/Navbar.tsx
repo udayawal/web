@@ -32,13 +32,13 @@ function Navbar({ isDarkMode, setIsDarkMode }: NavbarProps) {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <a href="https://github.com/yourusername" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
+            <a href="https://github.com/udayawal" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
               <Github className="w-6 h-6" />
             </a>
             <a href="https://linkedin.com/in/uday-awal" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://tryhackme.com/p/yourusername" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
+            <a href="https://tryhackme.com/p/udayAwal" className={isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}>
               <Trophy className="w-6 h-6" />
             </a>
             <button
