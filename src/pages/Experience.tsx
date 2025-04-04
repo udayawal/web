@@ -6,6 +6,23 @@ function Experience({ isDarkMode }) {
     <div className="container mx-auto px-6 py-16">
       <h2 className="text-3xl font-bold mb-12 text-cyan-400">Professional Experience</h2>
       <div className="space-y-12">
+        {/* 5 */}
+        <div className={`p-8 rounded-lg border hover:border-cyan-400 transition-colors group 
+                        ${isDarkMode ? 'bg-gray-800 border-gray-700 text-gray-300' : 'bg-white border-gray-300 text-gray-900'}`}>
+          <div className="flex items-center gap-4 mb-4">
+            <Briefcase className="w-7 h-7 text-cyan-400" />
+            <h3 className="text-xl font-semibold">Cyber Security Instructor</h3>
+          </div>
+          <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 mb-4">
+            <Calendar className="w-5 h-5" />
+            <span>Varsity Tutors | Feb 2025 - Present</span>
+          </div>
+          <ul className="space-y-3">
+            <li>• Deliver training on CompTIA A+, Security+, Networking, and Cybersecurity for all skill levels</li>
+            <li>• Offer personalized coaching to help students master complex IT, security, and networking concepts</li>
+            <li>• Create hands-on labs and real-world scenarios to build practical skills and reinforce learning</li>
+          </ul>
+        </div>
         {/* 4 */}
         <div className={`p-8 rounded-lg border hover:border-cyan-400 transition-colors group 
                         ${isDarkMode ? 'bg-gray-800 border-gray-700 text-gray-300' : 'bg-white border-gray-300 text-gray-900'}`}>
