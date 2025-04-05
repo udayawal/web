@@ -12,7 +12,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
-    <Router basename="/web">
+    <Router basename="/">
       <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-50 text-gray-900'}`}>
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <Routes>
