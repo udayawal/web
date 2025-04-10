@@ -19,13 +19,15 @@ function Home({ isDarkMode }: HomeProps) {
               <p className="text-xl text-gray-300 mb-8">
                 Information Security Professional specializing in threat detection, incident response, and security architecture
               </p>
-              <Link 
-                to="https://www.linkedin.com/messaging/thread/new/?recipient=uday-awal"
+              <a
+                href="https://www.linkedin.com/messaging/thread/new/?recipient=uday-awal"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-400 text-gray-900 rounded-lg font-medium transition-colors hover:opacity-90"
               >
                 Get in Touch
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
@@ -69,25 +71,33 @@ function Home({ isDarkMode }: HomeProps) {
       <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Experience</h2>
-          <div className="space-y-6">
-            <Link 
-              to="/experience/1" 
-              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}
+          <div className="space-y-6 px-2 md:px-0 overflow-visible">
+            <Link
+              to="/experience"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Information Security Analyst</h3>
-              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>PrismCode Info Solutions Pvt. Ltd | Jan 2024 - August 2024</p>
+              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+              Cyber Security Instructor
+              </h3>
+              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+              Varsity Tutors | Feb 2025 - Present
+              </p>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Led security monitoring and incident response initiatives, utilizing SIEM tools for threat detection and analysis.
+              Deliver training on CompTIA A+, Security+, Networking, and Cybersecurity for all skill levels.
               </p>
             </Link>
-            <Link 
-              to="/experience/2" 
-              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}
+            <Link
+              to="/experience"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
-              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Cloud Infrastructure and Security Intern</h3>
-              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>Celebal Technologies | June 2023 - August 2023</p>
+              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                Information Security Analyst
+              </h3>
+              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+                PrismCode Info Solutions Pvt. Ltd | Jan 2024 - August 2024
+              </p>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Implemented secure cloud infrastructure solutions using Azure, focusing on network security and access control.
+                Led security monitoring and incident response initiatives, utilizing SIEM tools for threat detection and analysis.
               </p>
             </Link>
             <Link 
@@ -102,11 +112,91 @@ function Home({ isDarkMode }: HomeProps) {
       </section>
       <section className="py-5">
         <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-8 text-cyan-400">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              to="/projects"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
+            >
+              <div className="flex flex-col mb-4" style={{ height: '400px' }}>
+                <div className="w-full flex-1">
+                  <img
+                    src=".\src\img\Wi-Fi Guardian.jpeg"
+                    alt="Project 1"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div className="w-full pt-4 px-2">
+                  <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                    Wi-Fi Guardian
+                  </h3>
+                  <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+                    Ethical Wi-Fi security analysis tool.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link
+              to="/projects"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
+            >
+              <div className="flex flex-col mb-4" style={{ height: '400px' }}>
+                <div className="w-full flex-1">
+                  <img
+                    src=".\src\img\SIEM.png"
+                    alt="Project 2"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div className="w-full pt-4 px-2">
+                  <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                    Azure Sentinel SIEM
+                  </h3>
+                  <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+                    Real-time cyber attack monitoring.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link
+              to="/projects"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
+            >
+              <div className="flex flex-col mb-4" style={{ height: '400px' }}>
+                <div className="w-full flex-1">
+                  <img
+                    src=".\src\img\P3.jpg"
+                    alt="Project 3"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+                <div className="w-full pt-4 px-2">
+                  <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                    Smart Lock with Biometric Authentication
+                  </h3>
+                  <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+                    Advanced biometric authentication system.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link 
+              to="/projects"
+              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
+            >
+              View All Projects
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="py-5">
+        <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Certifications</h2>
           <div className="space-y-6">
             <Link 
-              to="/certifications/1" 
-              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}
+              to="/certifications" 
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>CompTIA Security+</h3>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -114,8 +204,8 @@ function Home({ isDarkMode }: HomeProps) {
               </p>
             </Link>
             <Link 
-              to="/certifications/2" 
-              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}
+              to="/certifications" 
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Microsoft SC-900</h3>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -133,11 +223,11 @@ function Home({ isDarkMode }: HomeProps) {
         </div>
       </section>
       <section className="py-5">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Contact</h2>
           <Link 
             to="/contact" 
-            className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-all transform hover:scale-105 hover:shadow-lg hover:border-[#9EFCFF]`}
+            className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
           >
             <div className="max-w-2xl">
               <h3 className={`text-xl font-semibold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Let's Connect</h3>
@@ -145,9 +235,12 @@ function Home({ isDarkMode }: HomeProps) {
                 I'm always open to discussing cybersecurity projects, professional opportunities, or sharing insights about information security.
               </p>
               <div className="space-y-4">
-                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                  📧 udayawal11@gmail.com
-                </p>
+              📧<a 
+                href="mailto:udayawal11@gmail.com" 
+                className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} underline hover:text-cyan-400 transition-colors`}
+              >
+                udayawal11@gmail.com
+              </a>
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   📱 +1 263 881 8890
                 </p>
@@ -163,5 +256,4 @@ function Home({ isDarkMode }: HomeProps) {
     </div>
   );
 }
-
 export default Home;
