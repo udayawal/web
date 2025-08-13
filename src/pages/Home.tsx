@@ -121,7 +121,7 @@ function Home({ isDarkMode }: HomeProps) {
               <div className="flex flex-col mb-4" style={{ height: '400px' }}>
                 <div className="w-full flex-1">
                   <img
-                    src=".\src\img\Wi-Fi Guardian.jpeg"
+                    src="https://raw.githubusercontent.com/udayawal/web/refs/heads/main/src/img/Wi-Fi%20Guardian.jpeg"
                     alt="Project 1"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -143,7 +143,7 @@ function Home({ isDarkMode }: HomeProps) {
               <div className="flex flex-col mb-4" style={{ height: '400px' }}>
                 <div className="w-full flex-1">
                   <img
-                    src=".\src\img\SIEM.png"
+                    src="https://raw.githubusercontent.com/udayawal/web/refs/heads/main/src/img/SIEM.png"
                     alt="Project 2"
                     className="w-full h-full object-cover rounded-lg"
                   />
@@ -165,7 +165,7 @@ function Home({ isDarkMode }: HomeProps) {
               <div className="flex flex-col mb-4" style={{ height: '400px' }}>
                 <div className="w-full flex-1">
                   <img
-                    src=".\src\img\P3.jpg"
+                    src="https://raw.githubusercontent.com/udayawal/web/refs/heads/main/src/img/P3.jpg"
                     alt="Project 3"
                     className="w-full h-full object-cover rounded-lg"
                   />
