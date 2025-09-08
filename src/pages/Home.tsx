@@ -9,6 +9,7 @@ interface HomeProps {
 function Home({ isDarkMode }: HomeProps) {
   return (
     <div>
+      {/* Hero Section */}
       <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 py-20 transition-colors">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-12">
@@ -41,7 +42,11 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* Spacer */}
       <section className="py-5"></section>
+
+      {/* Skills Section */}
       <section className="py-5">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -68,38 +73,61 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* Experience Section */}
       <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Experience</h2>
           <div className="space-y-6 px-2 md:px-0 overflow-visible">
+
+            {/* Vosyn */}
             <Link
               to="/experience"
               className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-              Cyber Security Instructor
+                Cyber Security Analyst Intern
               </h3>
               <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
-              Varsity Tutors | Feb 2025 - Present
+                Vosyn | May 2025 - Aug 2025
               </p>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              Deliver training on CompTIA A+, Security+, Networking, and Cybersecurity for all skill levels.
+                Conducted IT risk assessments, security audits, and monitoring across cloud and on-prem systems.
               </p>
             </Link>
+
+            {/* Varsity Tutors */}
             <Link
               to="/experience"
               className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-                Information Security Analyst
+                Cyber Security Instructor
               </h3>
               <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
-                PrismCode Info Solutions Pvt. Ltd | Jan 2024 - August 2024
+                Varsity Tutors | Feb 2025 - Present
               </p>
               <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Led security monitoring and incident response initiatives, utilizing SIEM tools for threat detection and analysis.
+                Deliver training on CompTIA A+, Security+, and hands-on SOC concepts with tools like Nmap and Wireshark.
               </p>
             </Link>
+
+            {/* Celebal */}
+            <Link
+              to="/experience"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
+            >
+              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                Cloud Infrastructure and Security Intern
+              </h3>
+              <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mb-4`}>
+                Celebal Technologies | Jun 2023 - Aug 2023
+              </p>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Built secure Azure network architectures with VNet peering, ExpressRoute, and route filtering.
+              </p>
+            </Link>
+
             <Link 
               to="/experience"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
@@ -110,6 +138,8 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* Projects Section */}
       <section className="py-5">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Projects</h2>
@@ -190,6 +220,8 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* Certifications Section */}
       <section className="py-5">
         <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Certifications</h2>
@@ -222,6 +254,8 @@ function Home({ isDarkMode }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
       <section className="py-5">
         <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Contact</h2>
@@ -235,12 +269,12 @@ function Home({ isDarkMode }: HomeProps) {
                 I'm always open to discussing cybersecurity projects, professional opportunities, or sharing insights about information security.
               </p>
               <div className="space-y-4">
-              📧<a 
-                href="mailto:udayawal11@gmail.com" 
-                className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} underline hover:text-cyan-400 transition-colors`}
-              >
-                udayawal11@gmail.com
-              </a>
+                📧 <a 
+                  href="mailto:udayawal11@gmail.com" 
+                  className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} underline hover:text-cyan-400 transition-colors`}
+                >
+                  udayawal11@gmail.com
+                </a>
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   📱 +1 263 881 8890
                 </p>
@@ -252,8 +286,11 @@ function Home({ isDarkMode }: HomeProps) {
           </Link>
         </div>
       </section>
+
+      {/* Spacer */}
       <section className="py-5"></section>
     </div>
   );
 }
+
 export default Home;
