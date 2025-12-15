@@ -32,7 +32,7 @@ function Home({ isDarkMode }: HomeProps) {
             </div>
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-cyan-400">
-                <img 
+                <img
                   src="https://avatars.githubusercontent.com/u/80699327?v=4"
                   alt="Uday Awal"
                   className="w-full h-full object-cover"
@@ -128,7 +128,7 @@ function Home({ isDarkMode }: HomeProps) {
               </p>
             </Link>
 
-            <Link 
+            <Link
               to="/experience"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
             >
@@ -210,7 +210,7 @@ function Home({ isDarkMode }: HomeProps) {
                 </div>
               </div>
             </Link>
-            <Link 
+            <Link
               to="/projects"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
             >
@@ -226,8 +226,8 @@ function Home({ isDarkMode }: HomeProps) {
         <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Certifications</h2>
           <div className="space-y-6">
-            <Link 
-              to="/certifications" 
+            <Link
+              to="/certifications"
               className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>CompTIA Security+</h3>
@@ -235,8 +235,17 @@ function Home({ isDarkMode }: HomeProps) {
                 Certification ID: SY0-601
               </p>
             </Link>
-            <Link 
-              to="/certifications" 
+            <Link
+              to="/certifications"
+              className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
+            >
+              <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Oracle Cloud Infrastructure 2025 Multicloud Architect Professional</h3>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                Certification ID: 323352265OCI2025MCAOCP
+              </p>
+            </Link>
+            <Link
+              to="/certifications"
               className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
             >
               <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Microsoft SC-900</h3>
@@ -244,7 +253,7 @@ function Home({ isDarkMode }: HomeProps) {
                 Security, Compliance, and Identity Fundamentals
               </p>
             </Link>
-            <Link 
+            <Link
               to="/certifications"
               className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium"
             >
@@ -259,8 +268,8 @@ function Home({ isDarkMode }: HomeProps) {
       <section className="py-5">
         <div className="container mx-auto px-2 md:px-6 overflow-visible">
           <h2 className="text-3xl font-bold mb-8 text-cyan-400">Contact</h2>
-          <Link 
-            to="/contact" 
+          <Link
+            to="/contact"
             className={`block ${isDarkMode ? 'bg-gray-800' : 'bg-white'} p-6 rounded-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} transition-transform hover:scale-[1.02] hover:shadow-xl hover:border-[#9EFCFF]`}
           >
             <div className="max-w-2xl">
@@ -269,15 +278,13 @@ function Home({ isDarkMode }: HomeProps) {
                 I'm always open to discussing cybersecurity projects, professional opportunities, or sharing insights about information security.
               </p>
               <div className="space-y-4">
-                📧 <a 
-                  href="mailto:udayawal11@gmail.com" 
+                📧 <a
+                  href="mailto:udayawal11@gmail.com"
                   className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} underline hover:text-cyan-400 transition-colors`}
                 >
                   udayawal11@gmail.com
                 </a>
-                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                  📱 +1 263 881 8890
-                </p>
+
                 <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   📍 Montreal, Canada
                 </p>

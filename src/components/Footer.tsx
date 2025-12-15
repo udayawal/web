@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, ExternalLink } from 'lucide-react';
+import { Mail, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   isDarkMode: boolean;
@@ -19,9 +19,7 @@ function Footer({ isDarkMode }: FooterProps) {
               <a href="mailto:udayawal11@gmail.com" className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition duration-300">
                 <Mail className="w-5 h-5" /> udayawal11@gmail.com
               </a>
-              <a href="tel:+12638818890" className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition duration-300">
-                <Phone className="w-5 h-5" /> +1 263 881 8890
-              </a>
+
             </div>
           </div>
           {/* Quick Links */}
@@ -57,7 +55,7 @@ function Footer({ isDarkMode }: FooterProps) {
             </div>
           </div>
         </div>
-      </div>      
+      </div>
       {/* Legal Section */}
       <div className="w-full text-center mt-6 ">
         <p className="text-gray-500 text-sm opacity-80">© 2025 All rights reserved</p>

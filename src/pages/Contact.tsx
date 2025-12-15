@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Linkedin, ExternalLink } from 'lucide-react';
 
 interface ContactProps {
   isDarkMode: boolean;
@@ -7,90 +7,50 @@ interface ContactProps {
 
 function Contact({ isDarkMode }: ContactProps) {
   return (
-    <div className="container mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold mb-12 text-cyan-400">Get in Touch</h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div>
-          <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <Mail className="w-6 h-6 text-cyan-400" />
-              <div>
-                <p className="font-medium">Email</p>
-                <a href="mailto:udayawal11@gmail.com" className="text-gray-400 hover:text-cyan-400">
-                  udayawal11@gmail.com
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <Phone className="w-6 h-6 text-cyan-400" />
-              <div>
-                <p className="font-medium">Phone</p>
-                <a href="tel:+12638818890" className="text-gray-400 hover:text-cyan-400">
-                  +1 263 881 8890
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <MapPin className="w-6 h-6 text-cyan-400" />
-              <div>
-                <p className="font-medium">Location</p>
-                <p className="text-gray-400">Montreal, Canada</p>
-              </div>
-            </div>
-          </div>
+    <div className="container mx-auto px-6 py-20">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 text-cyan-400">Let's Connect</h2>
+          <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            I'm always open to discussing new opportunities and interesting projects.
+          </p>
         </div>
-        
-        <div>
-          <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-          <form className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                className={`w-full px-4 py-2 rounded-lg ${
-                  isDarkMode 
-                    ? 'bg-gray-700 border-gray-600 focus:border-cyan-400' 
-                    : 'bg-gray-100 border-gray-200 focus:border-cyan-400'
-                } border focus:outline-none focus:ring-2 focus:ring-cyan-400/20`}
-              />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Email */}
+          <a
+            href="mailto:udayawal11@gmail.com"
+            className={`flex flex-col items-center p-8 rounded-2xl border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group ${isDarkMode
+              ? 'bg-gray-800 border-gray-700 hover:border-cyan-400/50'
+              : 'bg-white border-gray-200 hover:border-cyan-400/50'
+              }`}
+          >
+            <div className={`p-4 rounded-full mb-6 ${isDarkMode ? 'bg-gray-700 group-hover:bg-gray-600' : 'bg-gray-100 group-hover:bg-gray-50'} transition-colors`}>
+              <Mail className="w-8 h-8 text-cyan-400" />
             </div>
-            
-            <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                className={`w-full px-4 py-2 rounded-lg ${
-                  isDarkMode 
-                    ? 'bg-gray-700 border-gray-600 focus:border-cyan-400' 
-                    : 'bg-gray-100 border-gray-200 focus:border-cyan-400'
-                } border focus:outline-none focus:ring-2 focus:ring-cyan-400/20`}
-              />
+            <h3 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Email</h3>
+            <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} text-center`}>udayawal11@gmail.com</p>
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/messaging/thread/new/?recipient=uday-awal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex flex-col items-center p-8 rounded-2xl border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group ${isDarkMode
+              ? 'bg-gray-800 border-gray-700 hover:border-cyan-400/50'
+              : 'bg-white border-gray-200 hover:border-cyan-400/50'
+              }`}
+          >
+            <div className={`p-4 rounded-full mb-6 ${isDarkMode ? 'bg-gray-700 group-hover:bg-gray-600' : 'bg-gray-100 group-hover:bg-gray-50'} transition-colors`}>
+              <Linkedin className="w-8 h-8 text-cyan-400" />
             </div>
-            
-            <div>
-              <label className="block text-sm font-medium mb-2">Message</label>
-              <textarea
-                rows={4}
-                className={`w-full px-4 py-2 rounded-lg ${
-                  isDarkMode 
-                    ? 'bg-gray-700 border-gray-600 focus:border-cyan-400' 
-                    : 'bg-gray-100 border-gray-200 focus:border-cyan-400'
-                } border focus:outline-none focus:ring-2 focus:ring-cyan-400/20`}
-              ></textarea>
+            <div className="flex items-center gap-2 mb-2">
+              <h3 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>LinkedIn</h3>
+              <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-cyan-400 transition-colors" />
             </div>
-            
-            <button
-              type="submit"
-              className="flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors"
-            >
-              Send Message
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
+            <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} text-center`}>Connect with me</p>
+          </a>
         </div>
       </div>
     </div>
